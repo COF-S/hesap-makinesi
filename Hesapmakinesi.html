@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="hesap.css">
+</head>
+<body>
+
+    <div class="hesapmakinesi">
+        <input type="text" id="yazi" readonly>
+        
+        <div class="buton-alanı">
+            <button onclick="temizlebutonu()" class="islemler">C</button>
+            <button onclick="sayilar('/')" class="islemler">/</button>
+            <button onclick="sayilar('*')" class="islemler">*</button>
+            <button onclick="silbutonu()" class="islemler">DEL</button>
+
+            <button onclick="sayilar('7')">7</button>
+            <button onclick="sayilar('8')">8</button>
+            <button onclick="sayilar('9')">9</button>
+            <button onclick="sayilar('-')" class="islemler">-</button>
+            
+            <button onclick="sayilar('4')">4</button>
+            <button onclick="sayilar('5')">5</button>
+            <button onclick="sayilar('6')">6</button>
+            <button onclick="sayilar('+')" class="islemler">+</button>
+            
+            <button onclick="sayilar('1')">1</button>
+            <button onclick="sayilar('2')">2</button>
+            <button onclick="sayilar('3')">3</button>
+            <button onclick="hesaplayıcı()" class="esittir">=</button>
+
+            <button onclick="sayilar('0')" class="sifir">0</button>
+            <button onclick="sayilar('.')">.</button>
+        </div>
+    </div>
+
+    <script src="hesap.js"></script>
+</body>
+</html>
